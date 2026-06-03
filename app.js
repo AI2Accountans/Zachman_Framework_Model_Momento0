@@ -130,6 +130,23 @@ return
   }
 ]`
         },
+        'E4': {
+            desc: "Fusión de 'Where' (Network/Location) con 'XML & Namespaces' (Physical). Representa la infraestructura física de red y almacenamiento distribuido para resguardar archivos sensibles de auditoría sobre un nodo IPFS privado en DigitalOcean (Directorio '/var/lib/ipfs', con puertos del API en 5001 y Gateway en 8081). Se accede de forma segura mediante túneles SSH remotos desde Windows, sin exposición pública.",
+            code: `// Configuración de red e infraestructura para IPFS Swarm (E4)
+{
+  "storage": {
+    "repository_path": "/var/lib/ipfs",
+    "type": "IPFS Private Swarm (Aislado)",
+    "swarm_key": "/key/swarm/psk/1.0.0/ (Base16 Hex Secret)"
+  },
+  "networking": {
+    "host_ip": "165.245.137.44",
+    "api_bind_address": "127.0.0.1:5001",
+    "gateway_bind_address": "127.0.0.1:8081",
+    "ssh_tunneling_mapping": "ssh -N -L 5001:127.0.0.1:5001 -L 8080:127.0.0.1:8081 root@165.245.137.44"
+  }
+}`
+        },
         'default': {
             desc: "Visualización ampliada de este holón de la arquitectura empresarial. En este entorno, cada intersección Zachman/Fila Semántica representa una perspectiva formalizada y documentada de nuestro ecosistema.",
             code: `[ Estado del Sistema ]

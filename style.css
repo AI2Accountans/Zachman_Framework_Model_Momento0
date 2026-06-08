@@ -353,3 +353,13 @@ header p {
 .walkthrough-container {
     margin-bottom: 20px;
 }
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid var(--border-color);
+    font-size: 11px;
+    color: #666;
+    background-color: #fafafa;
+    line-height: 1.5;
+}

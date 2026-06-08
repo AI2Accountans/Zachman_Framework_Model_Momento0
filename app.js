@@ -284,7 +284,7 @@ return
   </record>`
         },
         'C4': {
-            desc: "Fusión de 'What' (Data) con 'XML & Namespaces' (Physical). Representa el documento operativo original en bruto. A continuación se expone la línea de aporte de capital del Socio A del archivo físico de constitución XBRL GL (`constitucion_xbrlgl.xbrl`), con el bloque '<gl-bus:measurable>' para las acciones ordinarias.",
+            desc: "Fusión de 'What' (Data) con 'XML & Namespaces' (Physical). Representa el documento de origen físico en bruto, el cual puede ser un archivo XML de factura electrónica (UBL 2.1), un documento PDF digitalizado (como la Escritura de Constitución) o un archivo delimitado, constituyendo los soportes inalterables del ledger. Abajo se expone la línea de aporte de capital del Socio A del archivo físico de constitución XBRL GL (constitucion_xbrlgl.xbrl) con el bloque '<gl-bus:measurable>' para las acciones ordinarias.",
             code: `<!-- Aporte de Socio A en constitucion_xbrlgl.xbrl (C4) -->
 <gl-cor:entryDetail>
     <gl-cor:lineNumberCounter unitRef="COP">2</gl-cor:lineNumberCounter>
@@ -599,8 +599,8 @@ Nodos del Gemelo Digital Semántico activos.`
     const steps = [
         {
             cellId: 'C4',
-            title: '1. Origen Físico: Documentos UBL (C4)',
-            desc: 'El proceso inicia en la capa Física (XML & Namespaces) y en la columna de Datos (What). Aquí se almacena la Escritura Pública de Constitución o los XMLs transaccionales crudos (facturas UBL) como datos base inalterables.'
+            title: '1. Origen Físico: Documentos de Origen (C4)',
+            desc: 'El proceso inicia en la capa Física (XML & Namespaces) y en la columna de Datos (What). Aquí se almacena la Escritura Pública de Constitución (PDF), XMLs transaccionales crudos (facturas UBL) u otros soportes documentales como datos base inalterables.'
         },
         {
             cellId: 'B4',

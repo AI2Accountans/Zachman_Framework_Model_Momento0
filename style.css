@@ -302,57 +302,6 @@ header p {
     font-weight: bold;
 }
 
-/* Walkthrough Styles */
-.btn {
-    display: inline-block;
-    width: 100%;
-    padding: 8px 12px;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
-    background: #f5f5f5;
-    color: var(--text-dark);
-    cursor: pointer;
-    transition: all 0.2s;
-}
-.btn:hover {
-    background: #e0e0e0;
-}
-.btn-primary {
-    background: var(--active-border);
-    color: var(--text-light);
-    border-color: var(--active-border);
-}
-.btn-primary:hover {
-    background: #0052a3;
-}
-.holon-cell {
-    transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s, border-color 0.3s !important;
-}
-.holon-cell.highlight-step {
-    border: 3px solid #ff9800 !important;
-    box-shadow: 0 0 20px rgba(255, 152, 0, 0.6) !important;
-    transform: scale(1.06);
-    z-index: 20;
-    opacity: 1 !important;
-}
-.holon-cell.prev-step {
-    opacity: 0.65 !important;
-    border: 2px dotted #ff9800 !important;
-    transform: scale(1.02);
-    z-index: 10;
-}
-.holon-cell.next-step {
-    opacity: 0.65 !important;
-    border: 2px dashed #10b981 !important;
-    transform: scale(1.02);
-    z-index: 10;
-}
-.walkthrough-container {
-    margin-bottom: 20px;
-}
 footer {
     text-align: center;
     padding: 20px;

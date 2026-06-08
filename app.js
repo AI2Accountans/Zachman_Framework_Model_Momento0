@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </owl:Class>`
         },
         'B2': {
-            desc: "Fusión de 'How' (Process) con 'Ontology (OWL)' (Conceptual). Mapeo conceptual de partida doble (Pacioli) adaptado al estándar. Distribuye aritméticamente los Débitos (Caja 110505) y Créditos (Aportes Sociales 311505) para asegurar la integridad de las transacciones.",
+            desc: "Fusión de 'How' (Process) con 'Ontology (OWL)' (Conceptual). Mapeo conceptual de partida doble (Pacioli) adaptado al estándar. Distribuye aritméticamente los Débitos y Créditos para asegurar la integridad transaccional. Para entender cómo se estructura y automatiza la traducción de diarios contables bajo XBRL GL utilizando motores de mapeo (como Altova MapForce), ver los casos de estudio: (1) Caso de Estudio Altova Blog (https://www.altova.com/blog/2012/05/new-case-study-automating-xbrl-data-collection-and-processing) y (2) Caso de Estudio MACPA (https://www.altova.com/documents/macpa_casestudy.pdf).",
             code: `<!-- Regla Conceptual de Partida Doble en MapForce (B2) -->
 <component name="if-else" library="core" uid="25" kind="4">
     <sources>

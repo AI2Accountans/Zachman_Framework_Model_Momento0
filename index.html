@@ -36,6 +36,19 @@
                 <li data-col="col-where">Where (Network)</li>
                 <li data-col="col-when">When (Time)</li>
             </ul>
+
+            <h3>Walkthrough "Momento 0"</h3>
+            <div class="walkthrough-container">
+                <button id="start-walkthrough" class="btn btn-primary">Start Flow Walkthrough</button>
+                <div id="walkthrough-panel" style="display:none; margin-top:15px; padding:12px; background:#f9f9f9; border-radius:6px; border:1px solid var(--border-color);">
+                    <h4 id="wt-step-title" style="margin:0 0 5px 0; font-size:13px; color:var(--active-border);">Step 1</h4>
+                    <p id="wt-step-desc" style="font-size:11px; margin:0 0 12px 0; line-height:1.4; color:#555;">Description...</p>
+                    <div style="display:flex; justify-content:space-between; gap:10px;">
+                        <button id="wt-prev" class="btn" style="flex:1; padding:5px; font-size:10px;">Previous</button>
+                        <button id="wt-next" class="btn" style="flex:1; padding:5px; font-size:10px;">Next</button>
+                    </div>
+                </div>
+            </div>
         </aside>
 
         <!-- Main Grid Area -->
@@ -55,7 +68,7 @@
                     <strong>Contextual</strong><br>
                     <span class="tbl-layer">TBL: Trust & UI</span>
                 </div>
-                <div class="holon-cell layer-trust col-why" data-cell="A1">
+                <div class="holon-cell layer-trust col-why implemented" data-cell="A1">
                     <div class="title">Auditor Trust</div>
                     <div class="subtext">Compliance via ERP</div>
                 </div>
@@ -63,7 +76,7 @@
                     <div class="title">Report Workflow</div>
                     <div class="subtext">Dashboards / BI</div>
                 </div>
-                <div class="holon-cell layer-trust col-what" data-cell="C1">
+                <div class="holon-cell layer-trust col-what implemented" data-cell="C1">
                     <div class="title">Blockchain Immutability</div>
                     <div class="subtext">Emisión de Acciones</div>
                 </div>
@@ -85,7 +98,7 @@
                     <strong>Conceptual</strong><br>
                     <span class="tbl-layer">TBL: Ontology (OWL)</span>
                 </div>
-                <div class="holon-cell layer-onto col-why" data-cell="A2">
+                <div class="holon-cell layer-onto col-why implemented" data-cell="A2">
                     <div class="title">Business Rules</div>
                     <div class="subtext">DFRNT Logic</div>
                 </div>
@@ -105,7 +118,7 @@
                     <div class="title">Digital Ocean Nodes</div>
                     <div class="subtext">NoSQL DDBB / Nginx</div>
                 </div>
-                <div class="holon-cell layer-onto col-when" data-cell="F2">
+                <div class="holon-cell layer-onto col-when implemented" data-cell="F2">
                     <div class="title">Event Sequencing</div>
                     <div class="subtext">Transaction Logs</div>
                 </div>
@@ -115,7 +128,7 @@
                     <strong>Logical</strong><br>
                     <span class="tbl-layer">TBL: RDF (Graph)</span>
                 </div>
-                <div class="holon-cell layer-rdf col-why" data-cell="A3">
+                <div class="holon-cell layer-rdf col-why implemented" data-cell="A3">
                     <div class="title">Data Integrity</div>
                     <div class="subtext">SHACL Validation</div>
                 </div>
@@ -127,7 +140,7 @@
                     <div class="title">JSON-LD Models</div>
                     <div class="subtext">Graph DDBB Graph</div>
                 </div>
-                <div class="holon-cell layer-rdf col-who" data-cell="D3">
+                <div class="holon-cell layer-rdf col-who implemented" data-cell="D3">
                     <div class="title">System Identities</div>
                     <div class="subtext">User Auth RDF</div>
                 </div>

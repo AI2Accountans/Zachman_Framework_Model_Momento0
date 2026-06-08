@@ -643,6 +643,8 @@ Nodos del Gemelo Digital Semántico activos.`
         // Clear highlights and fades
         cells.forEach(c => {
             c.classList.remove('highlight-step');
+            c.classList.remove('prev-step');
+            c.classList.remove('next-step');
             c.classList.add('faded');
         });
         document.querySelectorAll('.header-cell').forEach(h => h.classList.add('faded'));
@@ -655,6 +657,26 @@ Nodos del Gemelo Digital Semántico activos.`
             targetCell.classList.add('highlight-step');
             // Scroll to view if needed
             targetCell.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
+        }
+
+        // Highlight previous step cell (medium brightness)
+        if (idx > 0) {
+            const prevStep = steps[idx - 1];
+            const prevCell = document.querySelector(`.holon-cell[data-cell="${prevStep.cellId}"]`);
+            if (prevCell) {
+                prevCell.classList.remove('faded');
+                prevCell.classList.add('prev-step');
+            }
+        }
+
+        // Highlight next step cell (medium brightness)
+        if (idx < steps.length - 1) {
+            const nextStep = steps[idx + 1];
+            const nextCell = document.querySelector(`.holon-cell[data-cell="${nextStep.cellId}"]`);
+            if (nextCell) {
+                nextCell.classList.remove('faded');
+                nextCell.classList.add('next-step');
+            }
         }
 
         // Update panel
@@ -675,6 +697,8 @@ Nodos del Gemelo Digital Semántico activos.`
         // Restore normal grid state
         cells.forEach(c => {
             c.classList.remove('highlight-step');
+            c.classList.remove('prev-step');
+            c.classList.remove('next-step');
             c.classList.remove('faded');
         });
         document.querySelectorAll('.header-cell').forEach(h => h.classList.remove('faded'));

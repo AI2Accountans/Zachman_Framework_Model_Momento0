@@ -338,6 +338,18 @@ header p {
     z-index: 20;
     opacity: 1 !important;
 }
+.holon-cell.prev-step {
+    opacity: 0.65 !important;
+    border: 2px dotted #ff9800 !important;
+    transform: scale(1.02);
+    z-index: 10;
+}
+.holon-cell.next-step {
+    opacity: 0.65 !important;
+    border: 2px dashed #10b981 !important;
+    transform: scale(1.02);
+    z-index: 10;
+}
 .walkthrough-container {
     margin-bottom: 20px;
 }
